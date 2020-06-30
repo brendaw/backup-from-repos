@@ -1,5 +1,7 @@
 # Backup From Repositories
 
+_Leia isso em [Português](README-pt-BR.md)._
+
 This is a simple script to backup all your GitHub repositories and put then into zip files. It also let you choose if you want to download only the private or the public repositories at a time.
 
 ### Dependencies
