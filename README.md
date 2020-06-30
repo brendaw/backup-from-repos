@@ -40,11 +40,11 @@ Simple do the [previously configuration](#to-backup-private-repos) and you will 
 
 First, you can clone the repository to your machine:
 
-`git clone https://github.com/brendaw/backup-from-repos`
+`$ git clone https://github.com/brendaw/backup-from-repos`
 
 Or, you can download the files with this curl command:
 
-`curl --remote-name-all https://raw.githubusercontent.com/brendaw/backup-from-repos/master/{backup-from-repos.sh,.env}`
+`$ curl --remote-name-all https://raw.githubusercontent.com/brendaw/backup-from-repos/master/{.env,backup-from-repos.sh}`
 
 Then, choose your backup option:
 
@@ -52,28 +52,19 @@ Then, choose your backup option:
 
 Run the script with `public` arg and pass your user when asked, like below:
 
-```
-./backup-from-repos.sh public
-
-```
+`$ ./backup-from-repos.sh public`
 
 ### To backup only private repos
 
 After you [configure your personal access token](#to-backup-private-repos), run the script with `private` arg. Since the private access token already have your user binded, the script will not ask for your user. Just run like below:
 
-```
-./backup-from-repos.sh private
-
-```
+`$ ./backup-from-repos.sh private`
 
 ### To backup both public and private repos
 
 After you [configure your personal access token](#to-backup-both-public-and-private-repos), run the script with `all` arg. Since the private access token already have your user binded, the script will not ask for your user. Just run like below:
 
-```
-./backup-from-repos.sh all
-
-```
+`$ ./backup-from-repos.sh all`
 
 ## Contributing
 

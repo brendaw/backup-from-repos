@@ -14,11 +14,11 @@ E é isso aí.
 
 ## Configuração
 
-Antes de começar os backups, você pode precisar realizar alguma configuração. Por isso, dê uma olhada nas opções abaixo:
+Antes de começar os backups, talvez seja necessário realizar alguma configuração. Por isso, dê uma olhada nas opções abaixo:
 
 ### Para realizar apenas o backup dos repositórios públicos
 
-Nesse caso, você não precisa gerar um token de acesso pessoal do GitHub ou pegar um existente. Apenas informe o seu username quando requisitado pelo script.
+Nesse caso, você não precisa gerar um token de acesso pessoal do GitHub ou pegar um existente. Apenas informe o seu username quando solicitado pelo script.
 
 E sim, com esse script você pode fazer backup dos repositórios públicos de QUALQUER usuário do GitHub. Bem legal, né?
 
@@ -36,46 +36,39 @@ Apenas faça a [configuração anterior](#para-realizar-apenas-o-backup-dos-repo
 
 ## Usando o script
 
-Primeiro, você pode clonar o repositório para o seu computador:First, you can clone the repository to your machine:
+Primeiro, você pode clonar o repositório para o seu computador:
 
-`git clone https://github.com/brendaw/backup-from-repos`
+`$ git clone https://github.com/brendaw/backup-from-repos`
 
 Ou, você pode baixar os arquivos com esse comando do curl:
 
-`curl --remote-name-all https://raw.githubusercontent.com/brendaw/backup-from-repos/master/{backup-from-repos.sh,.env}`
+`$ curl --remote-name-all https://raw.githubusercontent.com/brendaw/backup-from-repos/master/{.env,backup-from-repos.sh}`
+
+Depois, dê permissão de execução para 
 
 Após ter o script em mãos, escolha a sua opção de backup:
 
 ### Para realizar apenas o backup dos repositórios públicos
 
-Execute o script com o argumento `public` e informe o seu usuário quando requisitado pelo script, da seguinte forma:
+Execute o script com o argumento `public` e informe o seu usuário quando solicitado pelo script, da seguinte forma:
 
-```
-./backup-from-repos.sh public
-
-```
+`$ ./backup-from-repos.sh public`
 
 ### Para realizar apenas o backup dos repositórios privados
 
-Depois que você [configurar o seu token de acesso pessoal do GitHub](#para-realizar-apenas-o-backup-dos-repositórios-privados), execute o script com o argumento `private`. Como o token de acesso pessoal já está conectado ao seu usuário, o script não precisará pedir essa informação de você. Apenas rode o script como descrito abaixo:
+Depois que você [configurar o seu token de acesso pessoal do GitHub](#para-realizar-apenas-o-backup-dos-repositórios-privados), execute o script com o argumento `private`. Como o token de acesso pessoal já está conectado ao seu usuário, o script não precisará pedir essa informação para você. Apenas rode o script como descrito abaixo:
 
-```
-./backup-from-repos.sh private
+`$ ./backup-from-repos.sh private`
 
-```
+### Para realizar o backup de todos os repositórios (públicos e privados)
 
-### To backup both public and private repos
+Depois que você [configurar o seu token de acesso pessoal do GitHub](#para-realizar-apenas-o-backup-dos-repositórios-privados), execute o script com o argumento `all`. Como o token de acesso pessoal já está conectado ao seu usuário, o script não precisará pedir essa informação para você. Apenas rode o script como descrito abaixo:
 
-Depois que você [configurar o seu token de acesso pessoal do GitHub](#para-realizar-apenas-o-backup-dos-repositórios-privados), execute o script com o argumento `all`. Como o token de acesso pessoal já está conectado ao seu usuário, o script não precisará pedir essa informação de você. Apenas rode o script como descrito abaixo:
-
-```
-./backup-from-repos.sh all
-
-```
+`$ ./backup-from-repos.sh all`
 
 ## Contribuindo
 
-Você pode contribuir de várias maneiras, como criando novos recursos, corrigindo eventuais bugs, melhorando a documentação e os exemplos ou traduzir qualquer documento para a sua língua. As seções de [Issues](https://github.com/brendaw/backup-from-repos/issues) e [Pull Requests](https://github.com/brendaw/backup-from-repos/pulls) estão esperando a sua contribuição.
+Você pode contribuir de várias maneiras: criando novas funcionalidades, corrigindo eventuais bugs, melhorando a documentação e os exemplos ou traduzindo a documentação para a sua língua. As seções de [Issues](https://github.com/brendaw/backup-from-repos/issues) e [Pull Requests](https://github.com/brendaw/backup-from-repos/pulls) estão esperando a sua contribuição.
 
 ## Licença
 
