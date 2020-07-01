@@ -44,7 +44,9 @@ Ou, você pode baixar os arquivos com esse comando do curl:
 
 `$ curl --remote-name-all https://raw.githubusercontent.com/brendaw/backup-from-repos/master/{.env,backup-from-repos.sh}`
 
-Depois, dê permissão de execução para 
+Depois de baixar, dê permissão de execução para o script, como abaixo:
+
+`$ chmod +x backup-from-repos.sh`
 
 Após ter o script em mãos, escolha a sua opção de backup:
 

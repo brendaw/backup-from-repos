@@ -46,6 +46,10 @@ Or, you can download the files with this curl command:
 
 `$ curl --remote-name-all https://raw.githubusercontent.com/brendaw/backup-from-repos/master/{.env,backup-from-repos.sh}`
 
+After download, give execution permission to the script, as bellow:
+
+`$ chmod +x backup-from-repos.sh`
+
 Then, choose your backup option:
 
 ### To backup only public repos
